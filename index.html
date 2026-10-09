@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VECHANA AAPU EPDII!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles"></div>
+  <div id="confetti"></div>
+
+  <!-- INTRO -->
+  <section id="intro" class="screen active">
+    <div class="glow-orb orb-blue"></div>
+    <div class="glow-orb orb-green"></div>
+
+    <div class="glass intro-card">
+      <div class="sparkle-title">✨ A Little Surprise ✨</div>
+      <h1>Hey <span class="person-name">அம்மா </span> 💙</h1>
+      <p>Something special is waiting for you...</p>
+      <button class="main-btn" id="startBtn">Open Your Surprise</button>
+    </div>
+  </section>
+
+  <!-- YOUR BIRTHDAY VIDEO -->
+  <section id="birthdayVideo" class="screen">
+    <div class="video-wrapper">
+      <div class="section-label">🎁 Your first surprise</div>
+      <video id="mainVideo" class="main-video" controls playsinline>
+        <source src="videos/birthday.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <button class="main-btn next-btn" id="videoNextBtn">Continue 💙</button>
+    </div>
+  </section>
+
+  <!-- YES / NO QUESTION -->
+  <section id="question" class="screen">
+    <div class="glass question-card">
+      <div class="emoji-big">😈</div>
+      <h2>Okay... one important question. BOHAHAHA</h2>
+      <p class="question-text">Who loves you more?👀</p>
+
+      <div class="answer-area">
+        <button id="yesBtn" class="answer-btn yes-btn">Magal</button>
+        <button id="noBtn" class="answer-btn no-btn">Magan</button>
+      </div>
+
+      <p id="noMessage" class="no-message"></p>
+    </div>
+  </section>
+  <section id="videos" class="screen">
+  <div class="videos-container">
+    <div class="section-label"> You said YES! GOOD GIRL</div>
+    <h2>More little surprises for you ✨</h2>
+
+    <!-- One video -->
+    <div class="video-card">
+      <video controls playsinline>
+        <source src="videos/surprise1.mp4" type="video/mp4">
+      </video>
+      <h3>A Special Memory HEHEHE</h3>
+    </div>
+
+    <!-- First photo -->
+    <div class="photo-card">
+      <img src="images/surprise-photo1.jpeg"
+           alt="Birthday memory one">
+      <h3>A Memory to Keep </h3>
+    </div>
+
+    <!-- Second photo -->
+    <div class="photo-card">
+      <img src="images/surprise-photo2.jpeg"
+           alt="Birthday memory two">
+      <h3>A Little Memory ✨</h3>
+    </div>
+
+    <button class="main-btn final-btn" id="finalBtn">
+      One Last Thing... 🎂
+    </button>
+  </div>
+</section>
+  
+
+  <!-- FINAL -->
+  <section id="final" class="screen">
+    <div class="final-glow"></div>
+    <div class="glass final-card">
+      <div class="cake">🎂</div>
+      <div class="final-photos">
+  <img src="images/final-photo1.jpeg"
+       alt="A special birthday photo">
+
+  <img src="images/final-photo2.jpeg"
+       alt="Another special birthday photo">
+</div>
+      <div class="final-sparkles">✦ ✧ ✦ ✧ ✦</div>
+      <h1 class="birthday-title">HAPPY<br>BIRTHDAY!</h1>
+      <h2 class="person-name">EN VAZHVIN ARTHAME..😅</h2>
+      <p class="final-message">
+        I WILL BE THERE TO MAKE YOUR LIFE TO be filled with happiness, laughter,
+        beautiful memories and everything that makes you smile. HAHAHA
+      </p>
+      <div class="heart-line">👩‍👦‍👧</div>
+      <p class="signature">ENGAL CHELLAMEE💫</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
